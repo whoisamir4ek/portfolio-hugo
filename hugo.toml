@@ -1,0 +1,8 @@
+baseURL = 'https://whoisamir4ek.github.io/portfolio-hugo/'
+languageCode = 'ru-ru'
+title = 'Портфолио Амира Аглиуллина'
+enableRobotsTXT = true
+
+[params]
+  author = 'Аглиуллин Амир Равилевич'
+  description = 'Учебное веб-портфолио студента ИВТ: проекты, лабораторные работы и освоенные технологии.'
