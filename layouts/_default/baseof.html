@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}">АА<span>.</span></a>
+    <nav aria-label="Основная навигация">
+      <a href="{{ .Site.Home.RelPermalink }}">Портфолио</a>
+      <a href="{{ "about/" | relURL }}">Об авторе</a>
+      <a href="{{ "computer-practicum/" | relURL }}">Компьютерный практикум</a>
+    </nav>
+  </header>
+  <main class="page-shell">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer">
+    <span>© {{ .Site.Params.author }}, {{ now.Year }}</span>
+    <span>Сайт создан на Hugo · Материалы и их происхождение описаны на странице «Об авторе»</span>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">УЧЕБНОЕ ПОРТФОЛИО · ИВТ-1(2)</p>
+    <h1>Учусь.<br><span>Создаю.</span><br>Сохраняю результат.</h1>
+    <p class="lead">Аглиуллин Амир Равилевич — студент направления «Информатика и вычислительная техника» РГПУ им. А. И. Герцена.</p>
+    <div class="hero-actions"><a class="button" href="#works">Смотреть работы <span>↘</span></a><a class="text-link" href="{{ "about/" | relURL }}">Об авторе →</a></div>
+  </div>
+  <div class="hero-card" aria-label="Краткая информация">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="monogram">АА</div>
+    <p>ПОРТФОЛИО<br><strong>2026</strong></p><span class="hero-mark">✳</span>
+  </div>
+  <div class="hero-note"><span>01 / 03</span><span>Учебные проекты и лабораторные</span></div>
+</section>
+<section class="intro-band">
+  <span class="section-index">01 — ОБ ЭТОМ САЙТЕ</span>
+  <p>Здесь собраны учебные проекты, отчёты и освоенные технологии. Структура по дисциплинам повторяет удобный формат моего портфолио первого курса, а сам сайт собран на Hugo.</p>
+</section>
+<section id="works" class="works-section">
+  <div class="section-heading"><div><p class="eyebrow">ИЗБРАННОЕ</p><h2>Учебные работы</h2></div><span class="section-index">2024 — 2026</span></div>
+  <div class="work-grid">
+    <a class="work-card featured" href="{{ "computer-practicum/" | relURL }}"><span class="card-number">01 / ВЕБ</span><span class="card-icon">↗</span><h3>Сайт-портфолио<br>на Hugo</h3><p>Статический сайт, Markdown и автоматическая публикация через GitHub Actions.</p><span class="card-bottom">Компьютерный практикум <b>↗</b></span></a>
+    <a class="work-card" href="#subjects"><span class="card-number">02 / МОДЕЛИРОВАНИЕ</span><span class="card-icon">⌁</span><h3>Вычислительные<br>эксперименты</h3><p>Модели движения, колебаний и физических процессов.</p><span class="card-bottom">ИТ в физике <b>↗</b></span></a>
+    <a class="work-card" href="https://github.com/whoisamir4ek/labprog"><span class="card-number">03 / КОД</span><span class="card-icon">{ }</span><h3>Алгоритмы<br>и программирование</h3><p>Лабораторные работы: циклы, массивы, функции и условия.</p><span class="card-bottom">Репозиторий GitHub <b>↗</b></span></a>
+  </div>
+</section>
+<section id="subjects" class="subjects-section">
+  <div class="section-heading"><div><p class="eyebrow">АРХИВ</p><h2>По дисциплинам</h2></div><span class="section-index">ПОРТФОЛИО 1 КУРСА</span></div>
+  <div class="subject-list">
+    <a href="https://disk.yandex.com/d/0uq8MFQuLGs7Ow"><span>01</span><strong>Информатика</strong><small>Алгоритмы и вычислительные процессы</small><b>↗</b></a>
+    <a href="https://disk.yandex.com/d/2ZvEoOt1jBIuLg"><span>02</span><strong>ИТ в физике</strong><small>Моделирование и вычислительный эксперимент</small><b>↗</b></a>
+    <a href="https://disk.yandex.com/d/RQUESr4TzAENHA"><span>03</span><strong>ИТ в математике</strong><small>Электронные таблицы и Maxima</small><b>↗</b></a>
+    <a href="https://disk.yandex.com/d/JXEeyvSIbY22cg"><span>04</span><strong>Информационные технологии</strong><small>ИТ в образовании и профессиональной деятельности</small><b>↗</b></a>
+    <a href="https://disk.yandex.com/d/Gpcf9xHaiG9lkg"><span>05</span><strong>Линейная алгебра</strong><small>Матрицы, определители и системы</small><b>↗</b></a>
+    <a href="https://disk.yandex.com/d/rIc0pgcojwz9Cw"><span>06</span><strong>Дискретная математика</strong><small>Моделирование, логика и множества</small><b>↗</b></a>
+  </div>
+</section>
+<section class="closing-note"><span class="section-index">02 — ДАЛЬШЕ</span><p>Новые работы будут добавляться по мере обучения. Для каждой публикации указаны дисциплина, краткое описание и ссылка на материалы.</p><a href="{{ "about/" | relURL }}">Подробнее об авторе и источниках →</a></section>
+{{ end }}
